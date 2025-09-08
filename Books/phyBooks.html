@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+  <a class="book" 
+   href="../details.html?name=University Physics with Modern Physics&author=Hugh D. Young & Roger A. Freedman&price=$60&condition=New&image=images/young.jpg">
+  <img src="young.jpg" alt="University Physics with Modern Physics">
+  <h3>University Physics with Modern Physics</h3>
+  <p>Author: Hugh D. Young & Roger A. Freedman</p>
+  <p class="price">$60</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Concepts of Physics&author=H.C. Verma&price=$40&condition=New&image=images/verma.jpg">
+  <img src="verma.jpg" alt="Concepts of Physics">
+  <h3>Concepts of Physics</h3>
+  <p>Author: H.C. Verma</p>
+  <p class="price">$40</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Fundamentals of Physics&author=Halliday, Resnick & Walker&price=$55&condition=Used - Good&image=images/halliday.jpg">
+  <img src="halliday.jpg" alt="Fundamentals of Physics">
+  <h3>Fundamentals of Physics</h3>
+  <p>Author: Halliday, Resnick & Walker</p>
+  <p class="price">$55</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

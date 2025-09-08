@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+  <a class="book" 
+   href="../details.html?name=Human Geography: People, Place, and Culture&author=Erin H. Fouberg & Alexander B. Murphy&price=$45&condition=New&image=images/fouberg.jpg">
+  <img src="fouberg.jpg" alt="Human Geography: People, Place, and Culture">
+  <h3>Human Geography: People, Place, and Culture</h3>
+  <p>Author: Erin H. Fouberg & Alexander B. Murphy</p>
+  <p class="price">$45</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=The Power of Geography&author=Tim Marshall&price=$35&condition=New&image=images/marshall.jpg">
+  <img src="marshall.jpg" alt="The Power of Geography">
+  <h3>The Power of Geography</h3>
+  <p>Author: Tim Marshall</p>
+  <p class="price">$35</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Geographic Information Systems and Science&author=Paul A. Longley et al.&price=$50&condition=Used - Good&image=images/longley.jpg">
+  <img src="longley.jpg" alt="Geographic Information Systems and Science">
+  <h3>Geographic Information Systems and Science</h3>
+  <p>Author: Paul A. Longley et al.</p>
+  <p class="price">$50</p>
+</a>
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

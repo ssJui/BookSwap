@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <a class="book" 
+   href="../details.html?name=Structural Analysis&author=R.C. Hibbeler&price=$42&condition=New&image=images/hibbeler.jpg">
+  <img src="hibbeler.jpg" alt="Structural Analysis">
+  <h3>Structural Analysis</h3>
+  <p>Author: R.C. Hibbeler</p>
+  <p class="price">$42</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Principles of Environmental Engineering and Science&author=Mackenzie L. Davis & Susan J. Masten&price=$40&condition=New&image=images/davis.jpg">
+  <img src="davis.jpg" alt="Principles of Environmental Engineering and Science">
+  <h3>Principles of Environmental Engineering and Science</h3>
+  <p>Author: Mackenzie L. Davis & Susan J. Masten</p>
+  <p class="price">$40</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Civil Engineering Materials&author=Shan Somayaji&price=$38&condition=Used - Good&image=images/somayaji.jpg">
+  <img src="somayaji.jpg" alt="Civil Engineering Materials">
+  <h3>Civil Engineering Materials</h3>
+  <p>Author: Shan Somayaji</p>
+  <p class="price">$38</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

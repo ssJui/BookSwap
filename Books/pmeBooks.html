@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <a class="book" 
+   href="../details.html?name=Fundamentals of Petroleum Engineering&author=Richard C. Selley&price=$55&condition=New&image=images/selley.jpg">
+  <img src="selley.jpg" alt="Fundamentals of Petroleum Engineering">
+  <h3>Fundamentals of Petroleum Engineering</h3>
+  <p>Author: Richard C. Selley</p>
+  <p class="price">$55</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Mining Engineering Analysis&author=Christopher J. Bise&price=$50&condition=New&image=images/bise.jpg">
+  <img src="bise.jpg" alt="Mining Engineering Analysis">
+  <h3>Mining Engineering Analysis</h3>
+  <p>Author: Christopher J. Bise</p>
+  <p class="price">$50</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Reservoir Engineering Handbook&author=Tarek Ahmed&price=$60&condition=Used - Good&image=images/ahmed.jpg">
+  <img src="ahmed.jpg" alt="Reservoir Engineering Handbook">
+  <h3>Reservoir Engineering Handbook</h3>
+  <p>Author: Tarek Ahmed</p>
+  <p class="price">$60</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

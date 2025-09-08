@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+  <a class="book" 
+   href="../details.html?name=Calculus&author=James Stewart&price=$55&condition=New&image=images/stewart.jpg">
+  <img src="stewart.jpg" alt="Calculus">
+  <h3>Calculus</h3>
+  <p>Author: James Stewart</p>
+  <p class="price">$55</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Linear Algebra and Its Applications&author=Gilbert Strang&price=$50&condition=New&image=images/strang.jpg">
+  <img src="strang.jpg" alt="Linear Algebra and Its Applications">
+  <h3>Linear Algebra and Its Applications</h3>
+  <p>Author: Gilbert Strang</p>
+  <p class="price">$50</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Discrete Mathematics and Its Applications&author=Kenneth H. Rosen&price=$48&condition=Used - Good&image=images/rosen.jpg">
+  <img src="rosen.jpg" alt="Discrete Mathematics and Its Applications">
+  <h3>Discrete Mathematics and Its Applications</h3>
+  <p>Author: Kenneth H. Rosen</p>
+  <p class="price">$48</p>
+</a>
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

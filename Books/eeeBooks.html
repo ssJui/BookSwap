@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <a class="book" 
+   href="../details.html?name=Microelectronic Circuits&author=Adel S. Sedra & Kenneth C. Smith&price=$60&condition=New&image=images/sedra.jpg">
+  <img src="sedra.jpg" alt="Microelectronic Circuits">
+  <h3>Microelectronic Circuits</h3>
+  <p>Author: Adel S. Sedra & Kenneth C. Smith</p>
+  <p class="price">$60</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Fundamentals of Electric Circuits&author=Charles K. Alexander & Matthew N.O. Sadiku&price=$55&condition=New&image=images/alexander.jpg">
+  <img src="alexander.jpg" alt="Fundamentals of Electric Circuits">
+  <h3>Fundamentals of Electric Circuits</h3>
+  <p>Author: Charles K. Alexander & Matthew N.O. Sadiku</p>
+  <p class="price">$55</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Power System Analysis and Design&author=J. Duncan Glover & Mulukutla S. Sarma&price=$50&condition=Used - Good&image=images/glover.jpg">
+  <img src="glover.jpg" alt="Power System Analysis and Design">
+  <h3>Power System Analysis and Design</h3>
+  <p>Author: J. Duncan Glover & Mulukutla S. Sarma</p>
+  <p class="price">$50</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

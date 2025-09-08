@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+  <a class="book" 
+   href="../details.html?name=Probability and Statistics for Engineers and Scientists&author=Ronald E. Walpole et al.&price=$50&condition=New&image=images/walpole.jpg">
+  <img src="walpole.jpg" alt="Probability and Statistics for Engineers and Scientists">
+  <h3>Probability and Statistics for Engineers and Scientists</h3>
+  <p>Author: Ronald E. Walpole et al.</p>
+  <p class="price">$50</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=The Art of Statistics&author=David Spiegelhalter&price=$40&condition=New&image=images/spiegelhalter.jpg">
+  <img src="spiegelhalter.jpg" alt="The Art of Statistics">
+  <h3>The Art of Statistics</h3>
+  <p>Author: David Spiegelhalter</p>
+  <p class="price">$40</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=All of Statistics: A Concise Course in Statistical Inference&author=Larry Wasserman&price=$48&condition=Used - Good&image=images/wasserman.jpg">
+  <img src="wasserman.jpg" alt="All of Statistics">
+  <h3>All of Statistics: A Concise Course in Statistical Inference</h3>
+  <p>Author: Larry Wasserman</p>
+  <p class="price">$48</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

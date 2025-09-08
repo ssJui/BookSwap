@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+  <!-- ✅ English Department Books -->
+  <a class="book" 
+     href="../details.html?name=Literature: An Introduction to Fiction, Poetry, Drama, and Writing&author=X. J. Kennedy & Dana Gioia&price=$28&condition=New&image=images/literature_intro.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1471284087i/29587027.jpg" alt="Literature: An Introduction">
+    <h3>Literature: An Introduction to Fiction, Poetry, Drama, and Writing</h3>
+    <p>Authors: X. J. Kennedy & Dana Gioia</p>
+    <p class="price">$28</p>
+  </a>
+
+  <a class="book" 
+     href="../details.html?name=The Norton Anthology of English Literature&author=Stephen Greenblatt et al.&price=$35&condition=Used - Good&image=images/norton_anthology.jpg">
+    <img src="https://m.media-amazon.com/images/I/71IJ5mGDpkL._UF1000,1000_QL80_.jpg" alt="The Norton Anthology of English Literature">
+    <h3>The Norton Anthology of English Literature</h3>
+    <p>Authors: Stephen Greenblatt et al.</p>
+    <p class="price">$35</p>
+  </a>
+
+  <a class="book" 
+     href="../details.html?name=How to Read Literature Like a Professor&author=Thomas C. Foster&price=$22&condition=New&image=images/read_lit.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1724336111i/217981228.jpg" alt="How to Read Literature Like a Professor">
+    <h3>How to Read Literature Like a Professor</h3>
+    <p>Author: Thomas C. Foster</p>
+    <p class="price">$22</p>
+  </a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

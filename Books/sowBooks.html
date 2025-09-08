@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+  <div class="book-list">
+
+  <!-- ✅ Social Work Department Books -->
+  <a class="book" 
+     href="../details.html?name=The Call to Social Work&author=Craig Winston LeCroy&price=$116&condition=New&image=images/call_social_work.jpg">
+    <img src="https://m.media-amazon.com/images/I/41U8vMQCjpL.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg" 
+         alt="The Call to Social Work">
+    <h3>The Call to Social Work</h3>
+    <p>Author: Craig Winston LeCroy</p>
+    <p class="price">$116</p>
+  </a>
+
+  <a class="book" 
+     href="../details.html?name=Social Work: Promoting Community and Environmental Sustainability – Volume 2&author=IFSW&price=Free&condition=New&image=images/social_work_volume2.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXzB0MdBNLfSjdUOUHypxESVC8iy8avvFALg&s" 
+         alt="Social Work: Promoting Community and Environmental Sustainability – Volume 2">
+    <h3>Social Work: Promoting Community and Environmental Sustainability – Volume 2</h3>
+    <p>Author: International Federation of Social Workers</p>
+    <p class="price">Free</p>
+  </a>
+
+  <a class="book" 
+     href="../details.html?name=Introduction to Social Work&author=Lisa E. Cox, Carolyn J. Tice, Dennis D. Long&price=$183&condition=New&image=images/intro_social_work.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1OhEWj5_QLaSU4QospsUaF-DqIb6HPQt4Nw&s" 
+         alt="Introduction to Social Work">
+    <h3>Introduction to Social Work</h3>
+    <p>Authors: Lisa E. Cox, Carolyn J. Tice, Dennis D. Long</p>
+    <p class="price">$183</p>
+  </a>
+
+  <a class="book" 
+     href="../details.html?name=An Introduction to Social Work&author=Not specified&price=$29.95&condition=New&image=images/an_intro_social_work.jpg">
+    <img src="https://titles.cognella.com/pub/media/catalog/product/cache/e2583c2d75317d10cbdb11b428527546/c/o/cover--49902254282948-1B-URT.jpg" 
+         alt="An Introduction to Social Work">
+    <h3>An Introduction to Social Work</h3>
+    <p>Author: Not specified</p>
+    <p class="price">$29.95</p>
+  </a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

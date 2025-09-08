@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <a class="book" 
+   href="../details.html?name=Introduction to Work Study&author=International Labour Office (ILO)&price=$40&condition=New&image=images/ilo.jpg">
+  <img src="ilo.jpg" alt="Introduction to Work Study">
+  <h3>Introduction to Work Study</h3>
+  <p>Author: International Labour Office (ILO)</p>
+  <p class="price">$40</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Manufacturing Planning and Control for Supply Chain Management&author=F. Robert Jacobs & William Lee Berry&price=$55&condition=New&image=images/jacobs.jpg">
+  <img src="jacobs.jpg" alt="Manufacturing Planning and Control">
+  <h3>Manufacturing Planning and Control for Supply Chain Management</h3>
+  <p>Author: F. Robert Jacobs & William Lee Berry</p>
+  <p class="price">$55</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Production and Operations Management&author=Norman Gaither & Greg Frazier&price=$50&condition=Used - Good&image=images/gaither.jpg">
+  <img src="gaither.jpg" alt="Production and Operations Management">
+  <h3>Production and Operations Management</h3>
+  <p>Author: Norman Gaither & Greg Frazier</p>
+  <p class="price">$50</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

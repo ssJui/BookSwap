@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <a class="book" 
+   href="../details.html?name=Form, Space, and Order&author=Francis D.K. Ching&price=$35&condition=New&image=images/ching.jpg">
+  <img src="ching.jpg" alt="Form, Space, and Order">
+  <h3>Form, Space, and Order</h3>
+  <p>Author: Francis D.K. Ching</p>
+  <p class="price">$35</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=The Architecture Reference & Specification Book&author=Julia McMorrough&price=$40&condition=New&image=images/mcmorrough.jpg">
+  <img src="mcmorrough.jpg" alt="The Architecture Reference & Specification Book">
+  <h3>The Architecture Reference & Specification Book</h3>
+  <p>Author: Julia McMorrough</p>
+  <p class="price">$40</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Towards a New Architecture&author=Le Corbusier&price=$30&condition=Used - Good&image=images/lecorbusier.jpg">
+  <img src="lecorbusier.jpg" alt="Towards a New Architecture">
+  <h3>Towards a New Architecture</h3>
+  <p>Author: Le Corbusier</p>
+  <p class="price">$30</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

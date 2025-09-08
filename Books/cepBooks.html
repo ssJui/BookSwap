@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <a class="book" 
+   href="../details.html?name=Elements of Chemical Reaction Engineering&author=H. Scott Fogler&price=$45&condition=New&image=images/fogler.jpg">
+  <img src="fogler.jpg" alt="Elements of Chemical Reaction Engineering">
+  <h3>Elements of Chemical Reaction Engineering</h3>
+  <p>Author: H. Scott Fogler</p>
+  <p class="price">$45</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Introduction to Polymer Science and Technology&author=Manas Chanda&price=$50&condition=New&image=images/chanda.jpg">
+  <img src="chanda.jpg" alt="Introduction to Polymer Science and Technology">
+  <h3>Introduction to Polymer Science and Technology</h3>
+  <p>Author: Manas Chanda</p>
+  <p class="price">$50</p>
+</a>
+
+<a class="book" 
+   href="../details.html?name=Transport Processes and Separation Process Principles&author=Christie John Geankoplis&price=$48&condition=Used - Good&image=images/geankoplis.jpg">
+  <img src="geankoplis.jpg" alt="Transport Processes and Separation Process Principles">
+  <h3>Transport Processes and Separation Process Principles</h3>
+  <p>Author: Christie John Geankoplis</p>
+  <p class="price">$48</p>
+</a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
