@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookBuddies - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">BookBuddies</div>
+    <nav>
+      <ul>
+        <li><a href="#">Textbooks</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Kids & Young Adult</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Bargains</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <select>
+        <option>Books</option>
+        <option>Movies</option>
+        <option>Music</option>
+      </select>
+      <input type="text" placeholder="Search by Title, Author, or ISBN">
+      <button>🔍</button>
+    </div>
+    <div class="auth">
+      <a id="authLink" href="signin.html">Sign In</a> | <a href="#">Cart (0)</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>No more spending hundreds on textbooks</h1>
+    <h4>Buy a textbook from another student who no longer needs it</h4>
+    <div class="bestsellers">
+      <img src="images/Discreate.jpeg" alt="Book 1">
+      <img src="images/DSA.gif" alt="Book 2">
+      <img src="images/Sociology.jpeg" alt="Book 3">
+      <img src="images/Statistics & probability copy.jpeg" alt="Book 4">
+    </div>
+    <div class="browse-btn">
+      <p>Fiction Bestsellers – award-winning fiction titles and page-turners.</p>
+      <button>Browse Now</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Find new and used books to satisfy your imagination</h2>
+    <div class="grid">
+      <a href="applied.html" class="cat">Applied Sciences & Technology</a>
+      <a href="life.html" class="cat">Life Sciences</a>
+      <a href="physical.html" class="cat">Physical Sciences</a>
+      <a href="agriculture.html" class="cat">Agriculture and Mineral Science</a>
+      <a href="management.html" class="cat">Management & Business Administration</a>
+      <a href="social.html" class="cat">Social Sciences</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Payment Options</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">The BookBuddy Story</a></li>
+          <li><a href="#">Why Shop at BookBuddy?</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Account</h3>
+        <ul>
+          <li><a href="signin.html">Sign In / Create</a></li>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Wishlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#">Books with Free Shipping</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2025 BookBuddy Clone. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Update header after login
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      const authLink = document.getElementById("authLink");
+      authLink.textContent = user.name;
+      authLink.href = "profile.html";
+    }
+  </script>
+</body>
+</html>

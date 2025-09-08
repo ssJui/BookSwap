@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - BookBuddies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html" style="text-decoration:none; margin-left:20px;">⬅ Back to Home</a>
+  </header>
+
+  <!-- Sign In Form -->
+  <section class="signin">
+    <h2>Sign In</h2>
+    <form id="signinForm">
+      <label>Email:</label>
+      <input type="email" id="signinEmail" required>
+
+      <label>Password:</label>
+      <input type="password" id="signinPassword" required>
+
+      <button type="submit">Sign In</button>
+    </form>
+    <p style="text-align:center; margin-top:10px;">Don’t have an account? <a href="signup.html">Create One</a></p>
+  </section>
+
+  <script>
+    document.getElementById("signinForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const savedUser = JSON.parse(localStorage.getItem("user"));
+      const email = document.getElementById("signinEmail").value;
+      const password = document.getElementById("signinPassword").value;
+
+      if (savedUser && savedUser.email === email && savedUser.password === password) {
+        alert("Welcome back, " + savedUser.name + "!");
+        window.location.href = "profile.html"; // ✅ Go to profile after login
+      } else {
+        alert("Invalid login. Please try again.");
+      }
+    });
+  </script>
+</body>
+</html>
