@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+    
+  <!-- ✅ BBA Department Books -->
+  <a class="book" 
+     href="details.html?name=Principles of Management&author=Stephen P. Robbins & Mary Coulter&price=$18&condition=New&image=images/management.jpg">
+    <img src="management.jpeg" alt="Principles of Management">
+    <h3>Principles of Management</h3>
+    <p>Author: Stephen P. Robbins & Mary Coulter</p>
+    <p class="price">$18</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Marketing Management&author=Philip Kotler & Kevin Keller&price=$20&condition=Used - Good&image=images/marketing.jpg">
+    <img src="marketing.jpg" alt="Marketing Management">
+    <h3>Marketing Management</h3>
+    <p>Author: Philip Kotler & Kevin Keller</p>
+    <p class="price">$20</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Financial Management&author=Eugene F. Brigham & Joel F. Houston&price=$22&condition=Used&image=images/finance.jpg">
+    <img src="finance.jpg" alt="Financial Management">
+    <h3>Financial Management</h3>
+    <p>Author: Eugene F. Brigham & Joel F. Houston</p>
+    <p class="price">$22</p>
+  </a>
+
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

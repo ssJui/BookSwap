@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <!-- ✅ Forestry & Environmental Science Department Books -->
+  <a class="book" 
+     href="details.html?name=Principles of Environmental Science&author=William P. Cunningham & Mary Ann Cunningham&price=$18&condition=New&image=images/environmental-science.jpg">
+    <img src="environmental.webp" alt="Principles of Environmental Science">
+    <h3>Principles of Environmental Science</h3>
+    <p>Author: William P. Cunningham & Mary Ann Cunningham</p>
+    <p class="price">$18</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Forest Ecology&author=J. P. Kimmins&price=$20&condition=Used - Good&image=images/forest-ecology.jpg">
+    <img src="forestEcology.jpg" alt="Forest Ecology">
+    <h3>Forest Ecology</h3>
+    <p>Author: J. P. Kimmins</p>
+    <p class="price">$20</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Environmental Economics&author=Barry C. Field & Martha K. Field&price=$22&condition=Used&image=images/environmental-economics.jpg">
+    <img src="environ.jpg" alt="Environmental Economics">
+    <h3>Environmental Economics</h3>
+    <p>Author: Barry C. Field & Martha K. Field</p>
+    <p class="price">$22</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Forest Management&author=Lawrence S. Davis & K. Norman Johnson&price=$25&condition=New&image=images/forest-management.jpg">
+    <img src="alternative.jpg" alt="Forest Management">
+    <h3>Forest Management</h3>
+    <p>Author: Lawrence S. Davis & K. Norman Johnson</p>
+    <p class="price">$25</p>
+  </a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

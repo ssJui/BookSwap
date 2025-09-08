@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+
+  <!-- ✅ Biochemistry & Molecular Biology Department Books -->
+  <a class="book" 
+     href="details.html?name=Lehninger Principles of Biochemistry&author=David L. Nelson & Michael M. Cox&price=$28&condition=New&image=images/lehninger.jpg">
+    <img src="lehninger.jpg" alt="Lehninger Principles of Biochemistry">
+    <h3>Lehninger Principles of Biochemistry</h3>
+    <p>Author: David L. Nelson & Michael M. Cox</p>
+    <p class="price">$28</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Molecular Biology of the Cell&author=Bruce Alberts et al.&price=$32&condition=Used - Good&image=images/alberts.jpg">
+    <img src="alberts.jpg" alt="Molecular Biology of the Cell">
+    <h3>Molecular Biology of the Cell</h3>
+    <p>Author: Bruce Alberts et al.</p>
+    <p class="price">$32</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Molecular Cell Biology&author=Harvey Lodish et al.&price=$30&condition=New&image=images/lodish.jpg">
+    <img src="lodish.jpg" alt="Molecular Cell Biology">
+    <h3>Molecular Cell Biology</h3>
+    <p>Author: Harvey Lodish et al.</p>
+    <p class="price">$30</p>
+  </a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

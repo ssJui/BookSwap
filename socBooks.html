@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Sciences - Departments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BookBuddies</div>
+    <a href="index.html">⬅ Back to Home</a>
+  </header>
+  <h3>Available Books</h3>
+
+  <div class="book-list">
+    
+  <!-- ✅ Sociology Department Books -->
+  <a class="book" 
+     href="details.html?name=Sociology&author=Anthony Giddens&price=$25&condition=New&image=images/sociology_giddens.jpg">
+    <img src="https://m.media-amazon.com/images/I/61DVUu7J71L._UF894%2C1000_QL80_.jpg" alt="Sociology by Anthony Giddens">
+    <h3>Sociology</h3>
+    <p>Author: Anthony Giddens</p>
+    <p class="price">$25</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Introduction to Sociology&author=George Ritzer&price=$28&condition=Used - Good&image=images/intro_sociology_ritzer.jpg">
+    <img src="https://cmn-cdn-001.sagepub.com/books/titles/276069/cov_sb1_132114.jpg" alt="Introduction to Sociology by George Ritzer">
+    <h3>Introduction to Sociology</h3>
+    <p>Author: George Ritzer</p>
+    <p class="price">$28</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=Sociological Theory&author=Jonathan H. Turner&price=$30&condition=New&image=images/sociological_theory_turner.jpg">
+    <img src="https://m.media-amazon.com/images/I/81oWNp0VVlL._UF1000%2C1000_QL80_.jpg" alt="Sociological Theory by Jonathan H. Turner">
+    <h3>Sociological Theory</h3>
+    <p>Author: Jonathan H. Turner</p>
+    <p class="price">$30</p>
+  </a>
+
+  <a class="book" 
+     href="details.html?name=The Real World: An Introduction to Sociology&author=Kerry Ferris & Jill Stein&price=$27&condition=Used&image=images/real_world_sociology.jpg">
+    <img src="https://cmn-cdn-001.sagepub.com/books/titles/277277/cov_sb1_125831.jpg" alt="The Real World: An Introduction to Sociology by Kerry Ferris & Jill Stein">
+    <h3>The Real World: An Introduction to Sociology</h3>
+    <p>Author: Kerry Ferris & Jill Stein</p>
+    <p class="price">$27</p>
+  </a>
+
+</div>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Book Cover" style="width:120px; margin-bottom:10px; border-radius:5px;">
+      <h2 id="modalName"></h2>
+      <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+      <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+      <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
